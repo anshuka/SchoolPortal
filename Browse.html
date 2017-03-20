@@ -1,0 +1,380 @@
+<html lang="en" ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=2">
+		<link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+        <title> Anshuka </title>
+		
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+           <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+             crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		   <script src="app.js"></script>
+         <script src="dashboard.controller.js"></script>
+		 <script src="http://ui-grid.info/release/ui-grid.js"></script>
+        
+   
+		 <style type="text/css">
+        .gridStyle {
+            border: 1px solid rgb(212,212,212);
+            width: 700px;
+            height: 60px;
+			background-color:lightgray;
+        }
+
+        .red {
+            background-color: red !important;
+        }
+
+       
+
+        h1 {
+            border-bottom: 1px solid #000;
+            width: 50%;
+        }
+	
+    </style>
+    </head>
+    <body  style="background-color:lightgray">
+        
+       <div class="container-fluid" style = "background-color : lightblue">
+            <div class="row-fluid"style = "background-color : lightblue">
+              <nav class="navbar navbar-default"style = "background-color : 	#FFE4B5">
+              <div class="container" style = "background-color : 	#FFE4B5">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header" >
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Result's and Qualification </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">A Grade </a></li> 
+                    <li><a href="#">B Grade</a></li>
+                    <li><a href="#">C Grade</a></li>
+                    <li><img class="media-object" src="http://placehold.it/24x24" alt="Image 1" style="margin-top:1em"> </li>
+                      <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true" style="margin-top:0.3em"></span></a></li>
+
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container -->
+         </nav>
+            </div>
+        </div>
+                <div class="col-md-3">
+                  <div class="row" style = "background-color : 	#FFE4B5">
+                     <div style="margin-left:6em;width:4em">
+                         <label >Services</label>
+                      </div>
+
+                       <!-- <div class="container" style="margin-top:1em">
+                         <div class="row">
+                          <p style="background-color:white">BI</p>
+                          <p style="background-color:white">FR&amp;EXP</p>
+                        </div>
+                        <div class="row">
+                          <p style="background-color:white">DS</p>
+                          <p style="background-color:white">OCV</p>
+                        </div>
+                        <div  class="row">
+                          <p style="background-color:white">PH</p>
+                          <p style="background-color:white">OWSA</p>
+                        </div>
+
+                        </div> -->
+						<form>
+  <div class="form-group" style = "margin-left: 2em">
+    <label for="exampleInputEmail1">ID</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">
+    <small id="emailHelp" class="form-text text-muted">domain\Id</small>
+  </div>
+  <div class="form-group" style = "margin-left: 2em">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group" style = "margin-left: 2em">
+  
+    <dt>Login using your College username or 7-Digit Student/Employee ID Number</dt>
+<dd>Example: hunterh or 1234567 </dd>
+<dd>Request A New Password?</dd>
+<dd>Request My User ID</dd>
+  </div>
+   <button type="submit" class="btn btn-primary" style = "margin-left: 2em">SignUp</button>
+</form>
+                     
+                    </div>
+
+                  <div class="row" > 
+                    <div class="panel panel-default"style="height:33.3em;margin-top:2em;overflow-y:scroll ;background-color :#FFE4B5 "">
+                          <div class="panel-heading">
+                             <img class="media-object pull-left" src="http://placehold.it/24x24" alt="Image 1"> 
+                            <h3 class="panel-title" style="margin:0.3em 0 0 2em">Blackboard</h3>
+                          </div>
+                           <div class="panel-body row" style = "background-color : 	#FFE4B5">
+                            <dt><h3>Welcome to Blackboard</h3></dt>
+                           <dd><a href = '#'>FOR STUDENTS</a></dd>
+                            <dd>   <a href = '#'>FOR FACULTY</a></dd>
+                             <dd>  <a href = '#'>RESOURCES</a></dd>
+                              <dd> <a href = '#'>BLACKBOARD SUPPORT</a></dd>
+                               <hr />
+                               <label>Fall 2016 (and older) Courses</label>
+                               <div class="media">
+                                  <div class="media-left">
+                                    <a href="#">
+                                      <img class="media-object" src="http://placehold.it/74x54" alt="Image 1">
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <h4 class="media-heading">Academic Advising</h4>
+                                    <p>Faculty</p>
+                                  </div>
+                              </div>
+                               <div class="media">
+                                  <div class="media-left">
+                                    <a href="#">
+                                      <img class="media-object" src="http://placehold.it/74x54" alt="Image 1">
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <h4 class="media-heading">Courses Offering</h4>
+                                    <p>Plan of Study</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div> 
+                    
+                  <div class="row" >
+
+                      <div class="panel panel-default"style="height:50em;margin-top:20px;overflow-y:scroll; background-color :#FFE4B5 ">
+                          <div class="panel-heading">
+                             <img class="media-object pull-left" src="http://placehold.it/24x24" alt="Image 1"> 
+                            <h3 class="panel-title" style="margin:0.3em 0 0 2em">Degrees</h3>
+                          </div>
+                           <div class="panel-body">
+                            <h3>Undergraduate Degrees</h3>
+                         <dd>Biological Sciences BA</dd>
+<dd>Biological Sciences BS</dd>
+<dd>Computer Engineering BS</dd>
+<dd>Computer Information Systems BS</dd>
+<dd>Computer Science BS</dd>
+<dd>Environmental Science BS</dd>
+<dd>Information Technology BAS-IT</dd>
+<dd>Mathematical Science BA</dd>
+<dd>Mathematical Science BS</dd>
+<dd>Physics BS</dd>
+
+                               <hr />
+                               <h3>Graduate Students</h3>
+							                           <dd>Biological Sciences MS</dd>
+<dd>Biotechnology MS</dd>
+<dd>Chemistry</dd>
+<dd>Computer Engineering MS</dd>
+<dd>Computer Information Systems MS</dd>
+<dd>Computer Science MS</dd>
+<dd>Engineering Management MS</dd>
+<dd>Environmental Science MS</dd>
+<dd>Mathematical Science MS</dd>
+<dd>Physics MS</dd>
+<dd>Statistics MS</dd>
+<dd>Software Engineering MS</dd>
+<dd>Systems Engineering MS</dd>
+                            
+                              
+                          </div>
+                        </div>
+                      </div>
+
+            
+                </div>
+                <div class="col-md-6" style="background-color:lightblue">
+                  <div class="row-fluid">
+                   <div ng-controller="DashBoardController" class="container" ng-init="setlocalstorage()">
+						<h1>Add Student</h1>
+						<table class="table" cellpadding="5" cellspacing="5">
+							<tr>
+								<td>
+									Student Name
+								</td>
+								<td>
+									<input type="text" ng-model="student.name" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Test Score
+								</td>
+								<td>
+									<input type="number" ng-model="student.score" />
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input type="button" value="Save Student" ng-click="save()" />
+								</td>
+							</tr>
+						</table>
+						<br />
+						<h1>Student Summmary</h1>
+						<div class="gridStyle" ui-grid="gridOptions" ui-grid-edit ui-grid-row-edit ui-grid-cellnav ></div>
+				   </div>
+                    
+				</div>
+                 </div>
+                 <div class="col-md-3">
+                  <div class="row">
+                      <div class="panel panel-default"style="height:20em;overflow-y:scroll;margin-bottom:-0.5em ; background-color : 	#FFE4B5">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">COLLEGE NEWS</h3>
+                          </div>
+                           <div class="panel-body">
+                            <h3>Announcement</h3>
+							<p>Effective Fall of 2017, University students seeking a degree with a strong information technology focus through the university’s College of Science and Engineering have a new option with the addition of a Bachelor of Science in Information Technology</p>
+               
+                            <!-- <p>DRIVE PRODUCT SUCCESS</p>
+                               <p>DRIVE PRODUCT SUCCESS</p>
+                               <p>DRIVE PRODUCT SUCCESS</p>
+                               <p>DRIVE PRODUCT SUCCESS</p> -->
+
+                          </div>
+                          <div class="panel-footer">More News <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></div>
+                      </div>
+                     </div>
+
+                   <div class="row" >
+                      <div class="panel panel-default"style="margin-top:20px;height:50em;overflow-y:scroll"> <div class="panel-heading">
+                        <h3 class="panel-title">Academic Calender</h3>
+                      </div>
+                       <div class="panel-body" style = "background-color : 	#FFE4B5">
+                       <div class="media">
+                          <div >
+                            <a href="#">
+                              <img class="media-object" src="http://placehold.it/100x54" alt="Image 1">
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Current Semester: Spring 2017</h4>
+                            <p>These calendars are subject to change without notice. Please check periodically to make sure calendar dates have not changed.</p>
+                          </div>
+                        </div>
+                       <table class="table table-sm">
+  <thead >
+   Year 2017 - Spring Term Registration Information
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Early Registration Dates:</th>
+      <td>Monday, October 31, 2016 through Thursday, November 10, 2016 </td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Open Registration Dates:</th>
+      <td>Friday, November 11, 2016 through Friday, January 13, 2017 (closes at 5:00 PM Central  Time Zone)</td>
+    
+    </tr>
+    <tr>	
+      <th scope="row">Late Registration Dates:</th>
+     <td>Saturday, January 14, 2017 through Tuesday, January 24, 2017 (closes at 11:59 PM Central Time  Zone)Saturday, January 14, 2017 through Tuesday, January 24, 2017 (closes at 11:59 PM Central Time  Zone)</td>
+    </tr>
+  </tbody>
+</table>
+                   
+                    
+                    
+                      </div>
+                      </div>
+                    </div>
+                     
+                   <div class="row">
+
+                      <div class="panel panel-default" style="margin-top:20px;height:33.3em;overflow-y:scroll"> 
+                      <div class="panel-heading">
+                        <h3 class="panel-title">More Links</h3>
+                      </div>
+                       <div class="panel-body" style = "background-color : 	#FFE4B5">
+					  <a href = '#'><dd> Community College Counselors/Advisers</dd>
+					    <a href = '#'><dd> Immunization Requirements</dd>
+						  <a href = '#'><dd>Financial Aid</dd>
+						    <a href = '#'><dd> Net Price Calculator</dd>
+							  <a href = '#'><dd>Pearland Enrollment Services </dd>
+							  <a href = '#'><dd>Scholarships </dd>
+							  
+                       <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="http://placehold.it/74x54" alt="Image 1">
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Contact</h4>
+                            
+                          </div>
+                        </div>
+                       <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="http://placehold.it/74x54" alt="Image 1">
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Phone</h4>
+                            <p>12345678910</p>
+                          </div>
+                        </div>
+                       <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="http://placehold.it/74x54" alt="Image 1">
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Fax</h4>
+                           
+                          </div>
+                        </div>
+
+                        <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="http://placehold.it/74x54" alt="Image 1">
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Email</h4>
+                            <p>working hours</p>
+                          </div>
+                        </div>
+                      
+                       
+                        </div>
+                      </div>
+ </div>
+                    </div>
+
+         
+                </div>
+          </div>
+       <div class="container-fluid">
+            <div class="row-fluid">
+              <footer style="background:#e7e7e7;min-height: 50px;border: 1px solid;border-radius:4px">Copyright Information goes here</footer>
+            </div>
+        </div>
+        
+       
+        
+        
+        
+        
+    
+    </body>
+</html> 
